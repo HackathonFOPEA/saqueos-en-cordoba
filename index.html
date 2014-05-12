@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="iso-8859-1" />
-<title>Saqueos en Córdoba</title>
+<title>Saqueos en Cordoba</title>
 <style>
 body {
-    font: 13px Calibri, sans-serif;
+    font: 13px 'Calibri', sans-serif;
     background: #f0f0f0;
     font-family: Calibri, sans-serif;
 	color: #000;
@@ -13,7 +12,7 @@ body {
 h1 {
     text-shadow: 1px 1px 5px #fff;
     font-family: 'Calibri', sans-serif;
-    font-size: 5em;
+    font-size: 4em;
     margin: 0;
 
 }
@@ -22,125 +21,34 @@ li {
     list-style: none;
     padding: 0.2em 0;
 
-}
-.tagline {
-    font-family: 'Calibri', sans-serif;
-    font-size: 1.5em;
-    margin: 0;
-
-}
-h2 {
-    font-family: 'Calibri', sans-serif;
-
-}
-
-h4 {
-    font-family: 'Calibri', sans-serif;
-    font-size: 150%;
-}
-
-#cuadrantes {
-    background: #eee;
-    width: 640px;
-    height: 600px;
-    float: left;
-    border: 2px solid #000;
-    border-radius: 10px;
-    margin: 2em;
-}
-.circulo {
-    width: 24px;
-    height: 24px;
-    border-radius: 10px;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-right: 0.5em;
-}
-#divH {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: #ccc;
-    top: 50%;
-    left: 0;
-}
-#divV {
-    position: absolute;
-    height: 100%;
-    width: 1px;
-    background: #ccc;
-    left: 50%;
-    top: 0;
-}
-.referencia {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 10em;
-    height: 2em;
-    text-align: center;
-}
-#aus {
-
-}
-#pos {
-    margin-top: -2em;
-    margin-left: -10em;
-}
-#neg {
-    margin-top: -2em;
-
-}
-#abs {
-    margin-left: -10em;
-
-}
-
-#main {
-    width: 880px;
-    margin: 0 auto;
-}
-
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-}
-
-.quadrant {
-    opacity: 0.4;
-    stroke: #333;
-    fill: #CCC;
-}
-
-.tooltip {
-    background: #333;
-    color: #ffffff;
-    padding: 5px;
-}
-
-footer {
-    margin-top: 660px;
-}
 </style>
+
+</head>
 <body>
-<div align="center">
-<h1>Saqueos en Córdoba</h1>
-<iframe src="mapa.html" width="900" height="435" frameborder="0"></iframe>
-<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AuTgczD4al7WdGo1Ukk5Yk05MmFzRnIwRW52cWx5YWc&font=Bevan-PotanoSans&maptype=toner&lang=es&height=400' width='100%' height='400' frameborder='0'></iframe>
-</div>
-<table width="640"><tr><td>
-<p><b>Saqueos en Córdoba</b> fue creada durante el Hackatón del <a href="http://congresodigitalfopea.com/" target="_blank">Congreso de FOPEA</a> realizado en Córdoba en mayo de 2014.
-<p>Consta de dos visualizaciones basadas en sucesos de la ciudad de Córdoba en los primeros días de diciembre de 2013.
-<ul>
-<li>1. Un mapa extendido de incidentes reportados según publicara <a href="http://www.lavoz.com.ar/interactivo/el-mapa-de-los-saqueos-en-cordoba" target="_blank">La Voz del Interior</a>, clasificando según el tipo de suceso, sobre una capa temática mostrando el porcentaje de personas con estudios universitarios completos por radio censal según el Censo 2010 a fines de contextualización.</li>
-<li>2. Una línea de tiempo de los eventos clave a partir de las protestas de efectivos policiales que paralizaron la seguridad pública en la ciudad.</li>
-</ul>
-<p>Mapa creado por <b><a href="https://twitter.com/andy_tow" target="_blank">Andy Tow</a></b> con <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google FusionTables</a>.<br>Cartografía censal cortesía de <a href="https://twitter.com/ivokutzarida" target="_blank">Iván Torre</a>.
-<br>Datos por radio liberados con código desarrollado por <a href="https://twitter.com/manuelaristaran" target="_blank">Manuel Aristarán</a>.</p>
-<p>Línea de tiempo creada por <b><a href="https://twitter.com/elenabrizuela" target="_blank">Elena Brizuela</a></b> con <a href="http://timeline.knightlab.com/" target="_blank">Timeline.js</a></p>
-</td></tr></table>
+  <div align="center">
+        <h1>Saqueos en Córdoba</h1>
+		<iframe src="mapa.html" width="100%" height="435" frameborder="0"></iframe>
+        <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AuTgczD4al7WdGo1Ukk5Yk05MmFzRnIwRW52cWx5YWc&font=Bevan-PotanoSans&maptype=toner&lang=es&height=400' width='100%' height='400' frameborder='0'></iframe>
+    </div>
+	<table width="640">
+		<tr>
+			<td>
+				<p><b>Saqueos en Córdoba</b> fue creada durante el Hackatón del <a href="http://congresodigitalfopea.com/" target="_blank">Congreso de FOPEA</a> realizado en la ciudad de Córdoba, Argentina, en mayo de 2014.
+				<p>Consta de dos visualizaciones basadas en sucesos de la ciudad de Córdoba en los primeros días de diciembre de 2013.
+	<ul>
+		<li>1. Un mapa extendido de incidentes reportados según publicara <a href="http://www.lavoz.com.ar/interactivo/el-mapa-de-los-saqueos-en-cordoba" target="_blank">La Voz del Interior</a>, clasificando según el tipo de suceso, sobre una capa temática mostrando el porcentaje de personas con estudios universitarios completos por radio censal según el Censo 2010 a fines de contextualización.</li>
+		<li>2. Una línea de tiempo de los eventos clave de la crisis desatada a partir de las protestas de efectivos policiales que paralizaron la seguridad pública en la ciudad.</li>
+	</ul>
+
+	<p>Mapa creado por <b><a href="https://twitter.com/andy_tow" target="_blank">Andy Tow</a></b> con <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google FusionTables</a>.<br>Cartografía censal cortesía de <a href="https://twitter.com/ivokutzarida" target="_blank">Iván Torre</a>.
+
+	<br>Datos por radio liberados con código desarrollado por <a href="https://twitter.com/manuelaristaran" target="_blank">Manuel Aristarán</a>.</p>
+
+	<p>Línea de tiempo creada por <b><a href="https://twitter.com/elenabrizuela" target="_blank">Elena Brizuela</a></b> con <a href="http://timeline.knightlab.com/" target="_blank">Timeline.js</a></p>
+
+			</td>
+		</tr>
+	</table>
 </div>
 </body>
 </html>
