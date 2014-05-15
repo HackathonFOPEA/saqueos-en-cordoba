@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta name="viewport"></meta>
-<title>Merge of sociodemografico_cordoba and CordobaCapital-radios-GM - Google Fusion Tables</title>
+<title>Saqueos en Córdoba</title>
 <style type="text/css">
 html, body, #googft-mapCanvas {
   height: 435px;
   margin: 0;
   padding: 0;
-  width: 900px;
+  width: 100%;
 }
 #googft-legend{background-color:#f0f0f0;border:1px solid #fff;font-family:Calibri, sans-serif;font-size:12px;margin:3px;padding:5px 5px 3px;}#googft-legend p{font-weight:bold;margin-top:0;}#googft-legend div{margin-bottom:5px;}.googft-legend-swatch{border:1px solid;float:left;height:12px;margin-right:8px;width:20px;}.googft-legend-range{margin-left:0;}.googft-dot-icon{margin-right:8px;}.googft-paddle-icon{height:24px;left:-8px;margin-right:-8px;position:relative;vertical-align:middle;width:24px;}.googft-legend-source{margin-bottom:0;margin-top:8px;}.googft-legend-source a{color:#666;font-size:11px;}
 #googft-legend1{background-color:#f0f0f0;border:1px solid #fff;font-family:Calibri, sans-serif;font-size:12px;margin:3px;padding:5px 5px 3px;}#googft-legend p{font-weight:bold;margin-top:0;}#googft-legend div{margin-bottom:5px;}.googft-legend-swatch{border:0px solid;float:left;height:12px;margin-right:8px;width:20px;}.googft-legend-range{margin-left:0;}.googft-dot-icon{margin-right:8px;}.googft-paddle-icon{height:24px;left:-8px;margin-right:-8px;position:relative;vertical-align:middle;width:24px;}.googft-legend-source{margin-bottom:0;margin-top:8px;}.googft-legend-source a{color:#666;font-size:11px;}
@@ -26,11 +26,11 @@ html, body, #googft-mapCanvas {
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '900px';
+    mapDiv.style.width = isMobile ? '100%' : '100%';
     mapDiv.style.height = isMobile ? '100%' : '435px';
     var map = new google.maps.Map(mapDiv, {
       center: new google.maps.LatLng(-31.420513491874583, -64.16777452728174),
-      zoom: 13,
+      zoom: 14,
       mapTypeId: google.maps.MapTypeId.TERRAIN
     });
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend-open'));
@@ -88,18 +88,20 @@ html, body, #googft-mapCanvas {
   <div id="googft-mapCanvas"></div>
   <input id="googft-legend-open" style="display:none" type="button" value="Legend"></input>
   <div id="googft-legend">
-<table><tr>
-<td><img src="local.png"></td><td>58 Locales</td></tr>
-<td><img src="super.png"></td><td>43 Supermercados</td></tr>
-<td><img src="barricada.png"></td><td>43 Barricadas</td></tr>
-<td><img src="hogar.png"></td><td>11 Electrónica</td></tr>
-<td><img src="auto.png"></td><td>7 Automotores</td></tr>
-<td><img src="casa.png"></td><td>3 Residencias</td></tr>
-</table>
+	<table>
+		<tr>
+			<td>Eventos</td></tr>
+			<td><img src="img/local.png"></td><td>Locales sin especificar (58)</td></tr>
+			<td><img src="img/super.png"></td><td>Supermercados e hiper (43)</td></tr>
+			<td><img src="img/barricada.png"></td><td>Barricadas (43)</td></tr>
+			<td><img src="img/hogar.png"></td><td>Artículos del hogar (11)</td></tr>
+			<td><img src="img/auto.png"></td><td>Mecánica y automotores (7)</td></tr>
+			<td><img src="img/casa.png"></td><td>Residencias (3)</td>
+		</tr>
+	</table>
   </div>
   <div id="googft-legend1">
     <div align="center"><b>Universitarios<br>(2010)</b></div>
-<br>
     <div>
       <span class="googft-legend-swatch" style="background-color: #fff2cc"></span>
       <span class="googft-legend-range">&nbsp;&nbsp;0,0%</span>
@@ -116,7 +118,6 @@ html, body, #googft-mapCanvas {
       <span class="googft-legend-swatch" style="background-color: #20124d"></span>
       <span class="googft-legend-range">33,1%</span>
     </div>
-
   </div>
 </body>
 </html>
